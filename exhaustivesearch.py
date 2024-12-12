@@ -94,6 +94,8 @@ field = [
 ['.', '.', '.', '.', '.', '.', '.', '.', '.'] 
 ]
 """
+
+
 # Check if the input grid of the field is valid
 # If it is invalid print an error message
 if not validate_field(field):
