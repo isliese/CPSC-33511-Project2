@@ -22,7 +22,7 @@ To test these hypotheses, you will implement two algorithms:
 problem
 * a O($$𝑛^2$$) − time dynamic programming algorithm for the same problem.
 
-<br>
+<br><br>
 
 ## Problem 
 The Opponent Avoidance Problem
