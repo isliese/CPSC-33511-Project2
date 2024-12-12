@@ -1,5 +1,5 @@
 # CPSC-33511 Project 2
-2024 California State University Fullerton CPSC 335-11 (Algorithm Engineering) Project 2 <p> <p>
+2024 California State University Fullerton CPSC 335-11 (Algorithm Engineering) Project 2 <p> <p> <br>
 
 ## Project Subject
 Opponent Avoidance Problem <br>
