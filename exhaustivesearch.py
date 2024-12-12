@@ -120,7 +120,7 @@ else:
     # Otherwise print number of valid paths as well as each valid path arrow sequence
     else:
         print(f"Total valid paths: {valid_paths_count}")
-        print("Valid paths:\n")
+        print("Valid paths:")
         count = 1
         # Turns each arrow sequence into a string before printing
         for path in valid_paths_sequences:
