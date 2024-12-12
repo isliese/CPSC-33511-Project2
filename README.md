@@ -1,4 +1,5 @@
-## 2024 California State University Fullerton CPSC 335-11 (Algorithm Engineering) Project 2
+# CPSC-33511 Project 1
+2024 California State University Fullerton CPSC 335-11 (Algorithm Engineering) Project 2 <p> <p>
 
 Opponent Avoidance Problem
 Polynomial versus Exponential Time
@@ -8,7 +9,7 @@ Polynomial versus Exponential Time
 ## Instructions for running each algorithm
  
 
-
+<br><br><br>
 
 ## Hypothesis 
 This project will test the following hypotheses:
@@ -28,5 +29,12 @@ where soccer players of a team maneuver through an opponent-filled field in orde
 passage to reach the goal post.
 
 ## Exhaustive Search
-
+<br><br><br>
 ## Dynamic Programming 
+<br><br><br>
+
+## Collaborators 
+Chanran Kim (shining04@csu.fullerton.edu)
+Brian Alvarez
+Christopher Contreras
+Vinh Nguyen
