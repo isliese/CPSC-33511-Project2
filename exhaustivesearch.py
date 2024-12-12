@@ -82,7 +82,7 @@ def soccer_exhaustive(field):
 field = [[".", ".", "X"], [".", "X", "."], [".", ".", "."]]
 
 # 9x8 grid from example in directions
-"""
+
 field = [ 
 ['.', '.', '.', '.', '.', '.', 'X','.','X'],
 ['X', '.', '.', '.', '.', '.', '.', '.', '.'],
@@ -93,7 +93,7 @@ field = [
 ['.', '.', 'X', '.', '.', '.', '.', '.', 'X'],
 ['.', '.', '.', '.', '.', '.', '.', '.', '.'] 
 ]
-"""
+
 
 
 # Check if the input grid of the field is valid
@@ -112,5 +112,9 @@ else:
         print(f"Total valid paths: {valid_paths_count}")
         print("Valid paths:")
         # Turns each arrow sequence into a string before printing
+        print("\n")
+        count = 1
         for path in valid_paths_sequences:
+            print("path {}: ".format(count), end="")
             print(" ".join(path))
+            count += 1
