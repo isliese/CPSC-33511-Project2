@@ -9,7 +9,7 @@ Polynomial versus Exponential Time
 This project will test the following hypotheses:
 1. Exhaustive search algorithms can be implemented, and produce correct outputs.
 2. Algorithms with exponential or factorial running times are extremely slow, probably too
-slow to be of practical use.
+slow to be of practical use. <br>
 To test these hypotheses, you will implement two algorithms:
 *  a 𝑂(𝑛. $$2^𝑛$$) - time exhaustive search algorithm for the staged opponent avoidance
 problem
