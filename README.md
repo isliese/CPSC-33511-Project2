@@ -1,17 +1,16 @@
-# 2024 California State University Fullerton CPSC 335-11 (Algorithm Engineering) Project 2
+## 2024 California State University Fullerton CPSC 335-11 (Algorithm Engineering) Project 2
 
 Opponent Avoidance Problem
 Polynomial versus Exponential Time
 
 <br>
 
-### Instructions for running each algorithm
---- 
+## Instructions for running each algorithm
+ 
 
 
 
-### Hypothesis
---- 
+## Hypothesis 
 This project will test the following hypotheses:
 1. Exhaustive search algorithms can be implemented, and produce correct outputs.
 2. Algorithms with exponential or factorial running times are extremely slow, probably too
@@ -22,15 +21,12 @@ To test these hypotheses, you will implement two algorithms:
 problem
 * a O($$𝑛^2$$) − time dynamic programming algorithm for the same problem.
 
-### Problem
---- 
+## Problem 
 The Opponent Avoidance Problem
 The staged opponent avoidance problem is a puzzle that comes from a modified real-life scenario,
 where soccer players of a team maneuver through an opponent-filled field in order to find a safe
 passage to reach the goal post.
 
-### Exhaustive Search
---- 
+## Exhaustive Search
 
-### Dynamic Programming
---- 
+## Dynamic Programming 
