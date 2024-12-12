@@ -81,19 +81,30 @@ def soccer_exhaustive(field):
 # represented by a list of lists
 field = [[".", ".", "X"], [".", "X", "."], [".", ".", "."]]
 
+
+"""
 # 9x8 grid from example in directions
-field = [ 
-['.', '.', '.', '.', '.', '.', 'X','.','X'],
-['X', '.', '.', '.', '.', '.', '.', '.', '.'],
-['.', '.', '.', 'X', '.', '.', '.', 'X', '.'],
-['.', '.', 'X', '.', '.', '.', '.', 'X', '.'],
-['.', 'X', '.', '.', '.', '.', 'X', '.', '.'],
-['.', '.', '.', '.', 'X', '.', '.', '.', '.'],
-['.', '.', 'X', '.', '.', '.', '.', '.', 'X'],
-['.', '.', '.', '.', '.', '.', '.', '.', '.'] 
+field = [
+    [".", ".", ".", ".", ".", ".", "X", ".", "X"],
+    ["X", ".", ".", ".", ".", ".", ".", ".", "."],
+    [".", ".", ".", "X", ".", ".", ".", "X", "."],
+    [".", ".", "X", ".", ".", ".", ".", "X", "."],
+    [".", "X", ".", ".", ".", ".", "X", ".", "."],
+    [".", ".", ".", ".", "X", ".", ".", ".", "."],
+    [".", ".", "X", ".", ".", ".", ".", ".", "X"],
+    [".", ".", ".", ".", ".", ".", ".", ".", "."]
 ]
+"""
 
+"""
+# Completely open field
+field = [[".", ".", "."], [".", ".", "."], [".", ".", "."]]
+"""
 
+"""
+# One row field with path blocked by an 'X'
+field = [".", ".", "X", ".", "."]
+"""
 
 # Check if the input grid of the field is valid
 # If it is invalid print an error message
@@ -109,11 +120,10 @@ else:
     # Otherwise print number of valid paths as well as each valid path arrow sequence
     else:
         print(f"Total valid paths: {valid_paths_count}")
-        print("Valid paths:")
-        # Turns each arrow sequence into a string before printing
-        print("\n")
+        print("Valid paths:\n")
         count = 1
+        # Turns each arrow sequence into a string before printing
         for path in valid_paths_sequences:
-            print("path {}: ".format(count), end="")
+            print("Path {}: ".format(count), end="")
             print(" ".join(path))
             count += 1
