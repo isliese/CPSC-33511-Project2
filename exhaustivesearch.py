@@ -82,7 +82,6 @@ def soccer_exhaustive(field):
 field = [[".", ".", "X"], [".", "X", "."], [".", ".", "."]]
 
 # 9x8 grid from example in directions
-
 field = [ 
 ['.', '.', '.', '.', '.', '.', 'X','.','X'],
 ['X', '.', '.', '.', '.', '.', '.', '.', '.'],
