@@ -3,6 +3,8 @@
 Opponent Avoidance Problem
 Polynomial versus Exponential Time
 
+<br>
+
 ### Hypothesis
 This project will test the following hypotheses:
 1. Exhaustive search algorithms can be implemented, and produce correct outputs.
