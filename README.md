@@ -7,7 +7,8 @@ Polynomial versus Exponential Time
 <br>
 
 ## Instructions for running each algorithm
- 
+* Instructions for running both algorithms. 
+* Requirements for dependencies (e.g., Python version, required libraries).
 
 <br><br><br>
 
