@@ -1,7 +1,7 @@
 # CPSC-33511 Project 1
 2024 California State University Fullerton CPSC 335-11 (Algorithm Engineering) Project 2 <p> <p>
 
-Opponent Avoidance Problem
+Opponent Avoidance Problem <br>
 Polynomial versus Exponential Time
 
 <br>
