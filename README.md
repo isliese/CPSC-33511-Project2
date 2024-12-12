@@ -34,7 +34,7 @@ passage to reach the goal post.
 <br><br><br>
 
 ## Collaborators 
-Chanran Kim (shining04@csu.fullerton.edu)
-Brian Alvarez
-Christopher Contreras
+Chanran Kim (shining04@csu.fullerton.edu) <br>
+Brian Alvarez <br>
+Christopher Contreras <br>
 Vinh Nguyen
