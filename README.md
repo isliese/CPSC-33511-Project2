@@ -41,4 +41,4 @@ passage to reach the goal post.
 Chanran Kim (shining04@csu.fullerton.edu) <br>
 Brian Alvarez (briandalvarez@csu.fullerton.edu) <br>
 Christopher Contreras <br>
-Vinh Nguyen
+Vinh Nguyen (vinhgod123@csu.fullerton.edu)
