@@ -11,10 +11,6 @@ This project will test the following hypotheses:
 2. Algorithms with exponential or factorial running times are extremely slow, probably too
 slow to be of practical use.
 To test these hypotheses, you will implement two algorithms:
-1. a 𝑂(𝑛. 2
-𝑛
-) - time exhaustive search algorithm for the staged opponent avoidance
+1. a 𝑂(𝑛.$$2^𝑛$$) - time exhaustive search algorithm for the staged opponent avoidance
 problem; and
-2. a O(𝑛
-2
-) − time dynamic programming algorithm for the same problem.
+2. a O($$𝑛^2$$𝑛) − time dynamic programming algorithm for the same problem.
