@@ -1,5 +1,4 @@
 import time
-import random
 
 # Checks the grid for valid inputs
 # Takes a list of lists representing the field grid as a parameter
