@@ -6,6 +6,7 @@ Opponent Avoidance Problem <br>
 Polynomial versus Exponential Time
 
 <br>
+
 ## Requirements for dependencies 
 #### required libraries
 
