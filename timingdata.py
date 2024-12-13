@@ -115,10 +115,10 @@ def time_exhaustive_algorithm(exhaustive_sizes, output_file):
             print(f"Using exhaustive algorithm, grid size {n} x {n} took {exhaustive_time:.6f} seconds.")
 
 # Define different grid sizes for DP algorithm
-dp_sizes = [100, 200, 300, 400, 500]
+dp_sizes = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
 
 # Define different grid sizes for Exhaustive Search algorithm
-exhaustive_sizes = [8, 9, 10, 11, 12]
+exhaustive_sizes = [5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 # File to store results
 output_file = 'timing_results.txt'
