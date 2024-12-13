@@ -54,7 +54,7 @@ from location (𝒊,𝒋) to (𝒊,𝒋 + 𝟏); or down, from (𝒊,𝒋) to (�
 A path may not go through an occupied cell, so the Red Team can only
 move to a new location, if there is no opponent at that location.
 
-**The problem objective is to compute the number of different paths to cross the field.**
+**The problem objective is to compute the number of different paths to cross the field.** <br>
 Two paths are different if they differ by at least one location.
 
 <br>
