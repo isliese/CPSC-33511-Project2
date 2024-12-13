@@ -81,23 +81,28 @@ def generate_grid(n):
 def time_algorithm_for_sizes(sizes, algorithm):
     timings = []
     for n in sizes:
-        grid = generate_grid(n)  # Generate grid of size n x n
         if not validate_field(grid):
             print(f"Invalid field for grid size {n} x {n}.")
             continue
+        
+        # Measuring execution time
         start_time = time.time()
         if algorithm == "dp":
             valid_paths_count = soccer_dyn_prog(grid)
         elif algorithm == "exhaustive":
             valid_paths_count, _ = soccer_exhaustive(grid)
         end_time = time.time()
+
         elapsed_time = end_time - start_time
         timings.append((n, elapsed_time))
-        print(f"Grid size {n} x {n} took {elapsed_time:.6f} seconds. Paths: {valid_paths_count}")
+        print(f"Using {algorithm} algorithm, grid size {n} x {n} took {elapsed_time:.6f} seconds. Paths: {valid_paths_count}")
     return timings
 
 # Define different grid sizes (in terms of n x n)
 sizes = [10, 100, 1000, 5000, 7500, 10000]
+
+# Generate random grid of size n x n
+grid = generate_grid(n)  
 
 # Time both algorithms
 dp_timing_data = time_algorithm_for_sizes(sizes, algorithm="dp")
