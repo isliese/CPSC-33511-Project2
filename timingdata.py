@@ -93,7 +93,7 @@ def time_dp_algorithm(dp_sizes, output_file):
 
             result = f"{n}x{n}: {dp_time:.6f} seconds\n"
             f.write(result)
-            print(f"Using dp algorithm, grid size {n} x {n} took {dp_time:.6f} seconds. Paths: {dp_count}")
+            print(f"Using dp algorithm, grid size {n} x {n} took {dp_time:.6f} seconds.")
 
 # Function to time the Exhaustive Search algorithm on grids of different sizes
 def time_exhaustive_algorithm(exhaustive_sizes, output_file):
@@ -112,10 +112,10 @@ def time_exhaustive_algorithm(exhaustive_sizes, output_file):
 
             result = f"{n}x{n}: {exhaustive_time:.6f} seconds\n"
             f.write(result)
-            print(f"Using exhaustive algorithm, grid size {n} x {n} took {exhaustive_time:.6f} seconds. Paths: {exhaustive_count}")
+            print(f"Using exhaustive algorithm, grid size {n} x {n} took {exhaustive_time:.6f} seconds.")
 
 # Define different grid sizes for DP algorithm
-dp_sizes = [100, 500, 1000, 1500, 2000]
+dp_sizes = [100, 200, 300, 400, 500]
 
 # Define different grid sizes for Exhaustive Search algorithm
 exhaustive_sizes = [8, 9, 10, 11, 12]
