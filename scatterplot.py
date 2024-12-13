@@ -11,7 +11,7 @@ def read_timing_data(filename):
             parts = line.strip().split(": ")
             size = int(parts[0].split('x')[0])  # Extract grid size
             time = float(parts[1].split()[0])  # Extract time value
-            
+
             # Determine if the line corresponds to DP or Exhaustive based on size
             if size >= 100:  # DP grid sizes are larger
                 dp_n_values.append(size)
@@ -38,7 +38,7 @@ def plot_timing_data(dp_n_values, dp_times, exhaustive_n_values, exhaustive_time
 
     # Plot DP timings
     plt.figure(figsize=(12, 6))
-    plt.plot(dp_n_values, dp_times, 'o-r', label='Measured DP Times (O(n²))')
+    plt.scatter(dp_n_values, dp_times, c='red', label='Measured DP Times (O(n²))', alpha=0.5, s=80)
     plt.plot(n_values_dp, theoretical_dp, '--r', label='Theoretical O(n²)')
 
     plt.xlabel('Grid Size (n x n)', fontsize=12)
@@ -50,7 +50,7 @@ def plot_timing_data(dp_n_values, dp_times, exhaustive_n_values, exhaustive_time
 
     # Plot Exhaustive Search timings
     plt.figure(figsize=(12, 6))
-    plt.plot(exhaustive_n_values, exhaustive_times, 'o-b', label='Measured Exhaustive Times (O(n·2ⁿ))')
+    plt.scatter(exhaustive_n_values, exhaustive_times, c='blue', label='Measured Exhaustive Times (O(n·2ⁿ))', alpha=0.5, s=80)
     plt.plot(n_values_exhaustive, theoretical_exhaustive, '--b', label='Theoretical O(n·2ⁿ)')
 
     plt.xlabel('Grid Size (n x n)', fontsize=12)
@@ -63,11 +63,11 @@ def plot_timing_data(dp_n_values, dp_times, exhaustive_n_values, exhaustive_time
 if __name__ == "__main__":
     filename = 'timing_results.txt'  # file name
     dp_n_values, dp_times, exhaustive_n_values, exhaustive_times = read_timing_data(filename)
-    
+
     # Print data for debugging
     print("DP Sizes:", dp_n_values)
     print("DP Times:", dp_times)
     print("Exhaustive Sizes:", exhaustive_n_values)
     print("Exhaustive Times:", exhaustive_times)
-    
+
     plot_timing_data(dp_n_values, dp_times, exhaustive_n_values, exhaustive_times)
