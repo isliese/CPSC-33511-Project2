@@ -51,6 +51,12 @@ passage to reach the goal post.
 ## Dynamic Programming 
 <br><br><br>
 
+## Results
+![image](https://github.com/user-attachments/assets/917169a8-21a1-457b-b424-6feeee0bc889)
+![image](https://github.com/user-attachments/assets/5362923f-5251-4e4b-9fa0-2e2462a3b258)
+
+
+
 ## Collaborators 
 Chanran Kim (shining04@csu.fullerton.edu) <br>
 Brian Alvarez (briandalvarez@csu.fullerton.edu) <br>
