@@ -53,7 +53,7 @@ passage to reach the goal post.
 
 ## Results
 <img src="https://github.com/user-attachments/assets/917169a8-21a1-457b-b424-6feeee0bc889" width="40%">
-<img src="https://github.com/user-attachments/assets/5362923f-5251-4e4b-9fa0-2e2462a3b258" width="40%">
+<img src="https://github.com/user-attachments/assets/5362923f-5251-4e4b-9fa0-2e2462a3b258" width="38%">
 
 
 
