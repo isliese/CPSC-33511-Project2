@@ -1,37 +1,50 @@
 import matplotlib.pyplot as plt
 
-# Read timing data from the file
-def read_timing_data(filename='timing_results.txt'):
-    n_values = []
-    times = []
+# Function to read timing data
+def read_timing_data(filename):
+    dp_n_values, dp_times = [], []
+    exhaustive_n_values, exhaustive_times = [], []
+
     with open(filename, 'r') as f:
-        lines = f.readlines()
-        for line in lines:
-            parts = line.strip().split(": ")
-            n_values.append(int(parts[0].split('x')[0]))  # Extract n value
-            times.append(float(parts[1].split()[0]))  # Extract time value
-    return n_values, times
+        for line in f:
+            if line.startswith("DP"):
+                parts = line.strip().split(": ")
+                dp_n_values.append(int(parts[0].split()[1].split('x')[0]))
+                dp_times.append(float(parts[1].split()[0]))
+            elif line.startswith("Exhaustive"):
+                parts = line.strip().split(": ")
+                exhaustive_n_values.append(int(parts[0].split()[1].split('x')[0]))
+                exhaustive_times.append(float(parts[1].split()[0]))
 
-# Plotting the timing data
-def plot_timing_data(n_values, times):
-    # Scatter plot
-    plt.scatter(n_values, times, color='blue', label='Data points')
+    return dp_n_values, dp_times, exhaustive_n_values, exhaustive_times
 
-    # Optionally, fit a line (linear or logarithmic based on the data pattern)
-    plt.plot(n_values, times, 'r-', label='Best fit line')
-
-    # Labels and title
+# Function to plot timing data
+def plot_timing_data(dp_n_values, dp_times, exhaustive_n_values, exhaustive_times):
+    # Plot DP timings
+    plt.figure(figsize=(10, 5))
+    plt.plot(dp_n_values, dp_times, 'o-r', label='Dynamic Programming')
+    plt.xticks(dp_n_values)  # Ensure correct x-axis ticks for DP
+    plt.yticks([round(t, 2) for t in dp_times])  # Ensure correct y-axis ticks for DP
     plt.xlabel('Grid Size (n x n)', fontsize=12)
     plt.ylabel('Execution Time (seconds)', fontsize=12)
-    plt.title('Execution Time vs Grid Size', fontsize=14)
-
-    # Show plot
+    plt.title('DP Execution Time vs Grid Size', fontsize=14)
     plt.legend()
     plt.grid(True)
     plt.show()
 
-# Load the data
-n_values, times = read_timing_data()
+    # Plot Exhaustive Search timings
+    plt.figure(figsize=(10, 5))
+    plt.plot(exhaustive_n_values, exhaustive_times, 'o-b', label='Exhaustive Search')
+    plt.xticks(exhaustive_n_values)  # Ensure correct x-axis ticks for Exhaustive
+    plt.yticks([round(t, 2) for t in exhaustive_times])  # Ensure correct y-axis ticks for Exhaustive
+    plt.xlabel('Grid Size (n x n)', fontsize=12)
+    plt.ylabel('Execution Time (seconds)', fontsize=12)
+    plt.title('Exhaustive Search Execution Time vs Grid Size', fontsize=14)
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
-# Plot the data
-plot_timing_data(n_values, times)
+# Example usage (assuming timing_results.txt exists):
+if __name__ == "__main__":
+    dp_n_values, dp_times, exhaustive_n_values, exhaustive_times = read_timing_data('timing_results.txt')
+    plot_timing_data(dp_n_values, dp_times, exhaustive_n_values, exhaustive_times)
