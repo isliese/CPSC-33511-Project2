@@ -1,3 +1,6 @@
+import time
+import random
+
 # Checks the grid for valid inputs
 # Takes a list of lists representing the field grid as a parameter
 # Returns True if the grid is valid and returns False if it is invalid
@@ -52,10 +55,6 @@ def soccer_dyn_prog(field):
     return A[r-1][c-1]
     
 
-# 3x3 grid
-# represented by a list of lists
-field = [[".", ".", "X"], [".", "X", "."], [".", ".", "."]]
-
 # 9x8 grid from example in directions
 field = [ 
 ['.', '.', '.', '.', '.', '.', 'X','.','X'],
@@ -69,18 +68,24 @@ field = [
 ]
 
 
+
+# Executing dynamic programming algorithm in 9x8 grid from example in directions 
 # Check if the input grid of the field is valid
 # If it is invalid print an error message
 if not validate_field(field):
     print("Invalid field.")
 
 else:
+    # Measuring execution time of 9x8 grid from example in directions 
+    start_time = time.time()
     # If the grid  is valid find all valid paths using an exhaustive search
     valid_paths_count = soccer_dyn_prog(field)
+    end_time = time.time()
     # Print message when no valid paths exist
     if valid_paths_count == 0:
         print("No valid paths exist.")
     # Otherwise print number of valid paths 
     else:
         print(f"Total valid paths: {valid_paths_count}")
-        
+        time_taken = end_time - start_time
+        print(f"Execution Time: {time_taken:.6f} seconds")
