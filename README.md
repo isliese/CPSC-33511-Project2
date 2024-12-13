@@ -58,6 +58,8 @@ passage to reach the goalpost.
 Using exhaustive search follows a time complexity of  O(𝑛. $$2^𝑛$$) , while dynamic programming (DP) follows a time complexity of  O($$n^2$$) , as confirmed through a scatter plot.
 Although the exhaustive algorithm can obtain all possible paths, it takes too much time to be practical. On the other hand, using the DP algorithm significantly reduces the time required to find the solution.
 
+<br>
+
 ## Collaborators 
 - **Chanran Kim (shining04@csu.fullerton.edu)**: Dynamic Programming Algorithm and Scatter Plot Graph
 - **Brian Alvarez (briandalvarez@csu.fullerton.edu)**: Exhaustive Search Algorithm
