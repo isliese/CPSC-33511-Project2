@@ -20,6 +20,7 @@ Required modules: `matplotlib` `numpy` `time` `random`
 * To run Dynamic Programming: `python dynamicprogramming.py` <br>
 * To measure the execution time of two algorithms for the problem: `python timingdata.py` <br>
 * To draw scatter plots for two algorithms and compare with theoretical time complexity: `python scatterplot.py` <br>
+  (To draw proper scaatter plots according to data, you have to run `dynamicprogramming.py` first to create `timing_results.txt` file that is required by `scatterplot.py`)
 
 
 
