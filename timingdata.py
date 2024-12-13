@@ -77,44 +77,59 @@ def generate_controlled_grid(n):
     return grid
 
 # Function to time the DP algorithm on grids of different sizes
-def time_dp_algorithm(sizes):
-    for n in sizes:
-        grid = generate_controlled_grid(n)
+def time_dp_algorithm(dp_sizes, output_file):
+    with open(output_file, 'a') as f:
+        for n in dp_sizes:
+            grid = generate_controlled_grid(n)
 
-        if not validate_field(grid):
-            print(f"Invalid field for grid size {n} x {n}.")
-            continue
+            if not validate_field(grid):
+                print(f"Invalid field for grid size {n} x {n}.")
+                continue
 
-        # Measuring execution time for Dynamic Programming
-        start_time = time.time()
-        dp_count = soccer_dyn_prog(grid)
-        dp_time = time.time() - start_time
+            # Measuring execution time for Dynamic Programming
+            start_time = time.time()
+            dp_count = soccer_dyn_prog(grid)
+            dp_time = time.time() - start_time
 
-        print(f"Using dp algorithm, grid size {n} x {n} took {dp_time:.15f} seconds. Paths: {dp_count}")
+            result = f"{n}x{n}: {dp_time:.6f} seconds\n"
+            f.write(result)
+            print(f"Using dp algorithm, grid size {n} x {n} took {dp_time:.6f} seconds. Paths: {dp_count}")
 
 # Function to time the Exhaustive Search algorithm on grids of different sizes
-def time_exhaustive_algorithm(sizes):
-    for n in sizes:
-        grid = generate_controlled_grid(n)
+def time_exhaustive_algorithm(exhaustive_sizes, output_file):
+    with open(output_file, 'a') as f:
+        for n in exhaustive_sizes:
+            grid = generate_controlled_grid(n)
 
-        if not validate_field(grid):
-            print(f"Invalid field for grid size {n} x {n}.")
-            continue
+            if not validate_field(grid):
+                print(f"Invalid field for grid size {n} x {n}.")
+                continue
 
-        # Measuring execution time for Exhaustive Search
-        start_time = time.time()
-        exhaustive_count, _ = soccer_exhaustive(grid)
-        exhaustive_time = time.time() - start_time
+            # Measuring execution time for Exhaustive Search
+            start_time = time.time()
+            exhaustive_count, _ = soccer_exhaustive(grid)
+            exhaustive_time = time.time() - start_time
 
-        print(f"Using exhaustive algorithm, grid size {n} x {n} took {exhaustive_time:.6f} seconds. Paths: {exhaustive_count}")
+            result = f"{n}x{n}: {exhaustive_time:.6f} seconds\n"
+            f.write(result)
+            print(f"Using exhaustive algorithm, grid size {n} x {n} took {exhaustive_time:.6f} seconds. Paths: {exhaustive_count}")
 
-# Define different grid sizes (in terms of n x n)
-sizes = [12, 13, 14, 15, 16]
+# Define different grid sizes for DP algorithm
+dp_sizes = [100, 500, 1000, 1500, 2000]
+
+# Define different grid sizes for Exhaustive Search algorithm
+exhaustive_sizes = [8, 9, 10, 11, 12]
+
+# File to store results
+output_file = 'timing_results.txt'
+
+# Clear the output file before appending
+open(output_file, 'w').close()
 
 # Time DP algorithm
 print("Timing DP algorithm...")
-time_dp_algorithm(sizes)
+time_dp_algorithm(dp_sizes, output_file)
 
 # Time Exhaustive Search algorithm
 print("\nTiming Exhaustive algorithm...")
-time_exhaustive_algorithm(sizes)
+time_exhaustive_algorithm(exhaustive_sizes, output_file)
