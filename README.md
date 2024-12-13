@@ -6,17 +6,20 @@ Opponent Avoidance Problem <br>
 Polynomial versus Exponential Time
 
 <br>
+## Requirements for dependencies 
+#### required libraries
+
+Modules: `matplotlib` `numpy` `time` `random`
 
 ## Instructions for running each algorithm
 Clone Repository: `https://github.com/isliese/CPSC-33511-Project2.git` <br>
 `cd CPSC-33511-Project2` <br>
 To run Exhaustive Search Algorithm: `python exhaustivesearch.py` <br>
 To run Dynamic Programming: `python dynamicprogramming.py` <br>
-To measure execution time of two algorithms for the problem: 
+To measure execution time of two algorithms for the problem: `python timingdata.py` <br>
 To draw scatter plots for two algorithms and compare with theoretical time complexity: `python scatterplot.py` <br>
 
 
-* Requirements for dependencies (e.g., Python version, required libraries).
 
 <br><br><br>
 
