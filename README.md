@@ -8,9 +8,7 @@ Polynomial versus Exponential Time
 <br>
 
 ## Requirements for dependencies 
-#### required libraries
-
-Modules: `matplotlib` `numpy` `time` `random`
+Required modules: `matplotlib` `numpy` `time` `random`
 
 ## Instructions for running each algorithm
 Clone Repository: `https://github.com/isliese/CPSC-33511-Project2.git` <br>
