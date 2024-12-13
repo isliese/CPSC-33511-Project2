@@ -58,11 +58,7 @@ passage to reach the goalpost.
 
 
 ## Collaborators 
-Chanran Kim (shining04@csu.fullerton.edu) 
-  - Dynamic Programming Algorithm and Scatter Plot Graph 
-Brian Alvarez (briandalvarez@csu.fullerton.edu) 
-  - Exhaustive Search Algorithm 
-Christopher Contreras (CContreras71@csu.fullerton.edu)
-  - Timing Result and Scatter Plot Graph 
-Vinh Nguyen (vinhgod123@csu.fullerton.edu)
-  - Project Report 
+- **Chanran Kim (shining04@csu.fullerton.edu)**: Dynamic Programming Algorithm and Scatter Plot Graph
+- **Brian Alvarez (briandalvarez@csu.fullerton.edu)**: Exhaustive Search Algorithm
+- **Christopher Contreras (CContreras71@csu.fullerton.edu)**: Timing Result and Scatter Plot Graph
+- **Vinh Nguyen(vinhgod123@csu.fullerton.edu)**: Project Report
