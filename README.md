@@ -9,9 +9,9 @@ Polynomial versus Exponential Time
 
 ## Instructions for running each algorithm
 Clone Repository: https://github.com/isliese/CPSC-33511-Project2.git <br>
-cd CPSC-33511-Project2 <br>
-To run Exhaustive Search Algorithm: python exhaustivesearch.py <br>
-To run Dynamic Programming: python dynamicprogramming.py <br>
+`cd CPSC-33511-Project2` <br>
+To run Exhaustive Search Algorithm: `python exhaustivesearch.py` <br>
+To run Dynamic Programming: `python dynamicprogramming.py` <br>
 
 * Requirements for dependencies (e.g., Python version, required libraries).
 
