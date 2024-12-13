@@ -16,10 +16,10 @@ Required modules: `matplotlib` `numpy` `time` `random`
 1. Clone Repository: `https://github.com/isliese/CPSC-33511-Project2.git` <br>
 2. `cd CPSC-33511-Project2` <br>
 3. Run programs
-To run Exhaustive Search Algorithm: `python exhaustivesearch.py` <br>
-To run Dynamic Programming: `python dynamicprogramming.py` <br>
-To measure execution time of two algorithms for the problem: `python timingdata.py` <br>
-To draw scatter plots for two algorithms and compare with theoretical time complexity: `python scatterplot.py` <br>
+* To run Exhaustive Search Algorithm: `python exhaustivesearch.py` <br>
+* To run Dynamic Programming: `python dynamicprogramming.py` <br>
+* To measure execution time of two algorithms for the problem: `python timingdata.py` <br>
+* To draw scatter plots for two algorithms and compare with theoretical time complexity: `python scatterplot.py` <br>
 
 
 
