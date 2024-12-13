@@ -18,7 +18,7 @@ Required modules: `matplotlib` `numpy` `time` `random`
 3. Run programs
 * To run Exhaustive Search Algorithm: `python exhaustivesearch.py` <br>
 * To run Dynamic Programming: `python dynamicprogramming.py` <br>
-* To measure execution time of two algorithms for the problem: `python timingdata.py` <br>
+* To measure the execution time of two algorithms for the problem: `python timingdata.py` <br>
 * To draw scatter plots for two algorithms and compare with theoretical time complexity: `python scatterplot.py` <br>
 
 
@@ -41,8 +41,8 @@ problem
 ## Problem 
 The Opponent Avoidance Problem
 The staged opponent avoidance problem is a puzzle that comes from a modified real-life scenario,
-where soccer players of a team maneuver through an opponent-filled field in order to find a safe
-passage to reach the goal post.
+where soccer players of a team maneuver through an opponent-filled field to find a safe
+passage to reach the goalpost.
 
 <br>
 
@@ -58,7 +58,11 @@ passage to reach the goal post.
 
 
 ## Collaborators 
-Chanran Kim (shining04@csu.fullerton.edu) <br>
-Brian Alvarez (briandalvarez@csu.fullerton.edu) <br>
-Christopher Contreras (CContreras71@csu.fullerton.edu) <br>
+Chanran Kim (shining04@csu.fullerton.edu) 
+  - Dynamic Programming Algorithm and Scatter Plot Graph 
+Brian Alvarez (briandalvarez@csu.fullerton.edu) 
+  - Exhaustive Search Algorithm 
+Christopher Contreras (CContreras71@csu.fullerton.edu)
+  - Timing Result and Scatter Plot Graph 
 Vinh Nguyen (vinhgod123@csu.fullerton.edu)
+  - Project Report 
