@@ -76,13 +76,13 @@ def soccer_exhaustive(field):
     # Returns the total number of valid paths as well as the arrow sequences for each valid path
     return counter, valid_paths
 
-
+"""
 # 3x3 grid
 # represented by a list of lists
 field = [[".", ".", "X"], [".", "X", "."], [".", ".", "."]]
-
-
 """
+
+
 # 9x8 grid from example in directions
 field = [
     [".", ".", ".", ".", ".", ".", "X", ".", "X"],
@@ -94,7 +94,7 @@ field = [
     [".", ".", "X", ".", ".", ".", ".", ".", "X"],
     [".", ".", ".", ".", ".", ".", ".", ".", "."]
 ]
-"""
+
 
 """
 # Completely open field
@@ -127,3 +127,4 @@ else:
             print("Path {}: ".format(count), end="")
             print(" ".join(path))
             count += 1
+    print("Time Complexity: O(𝑛. 2^𝑛) (exponential complexity)")

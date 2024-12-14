@@ -1,5 +1,3 @@
-import time
-
 # Checks the grid for valid inputs
 # Takes a list of lists representing the field grid as a parameter
 # Returns True if the grid is valid and returns False if it is invalid
@@ -75,16 +73,12 @@ if not validate_field(field):
     print("Invalid field.")
 
 else:
-    # Measuring execution time of 9x8 grid from example in directions 
-    start_time = time.time()
     # If the grid  is valid find all valid paths using an exhaustive search
     valid_paths_count = soccer_dyn_prog(field)
-    end_time = time.time()
     # Print message when no valid paths exist
     if valid_paths_count == 0:
         print("No valid paths exist.")
     # Otherwise print number of valid paths 
     else:
         print(f"Total valid paths: {valid_paths_count}")
-        time_taken = end_time - start_time
-        print(f"Execution Time: {time_taken:.6f} seconds")
+        print("Time Complexity: O(𝑛^2) (quadratic complexity)")
