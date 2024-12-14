@@ -20,8 +20,8 @@ Required modules: `matplotlib` `numpy` `time` `random`
 * To solve problem with Dynamic Programming: `python dynamicprogramming.py` <br>
 * To measure the execution time of two algorithms for the problems: `python timingdata.py` <br>
 * To draw scatter plots for two algorithms and compare with theoretical time complexity: `python scatterplot.py` <br>
-  (To draw proper scatter plots according to timing data, you have to run `dynamicprogramming.py` first to create the `timing_results.txt` file that is required by `scatterplot.py`)
-  (You can see <Dynamic Programming Execution Time vs Grid Size> graph first, close the window with X button, and see <Exhaustive Search Execution Time vs Grid Size> graph)
+  To draw proper scatter plots according to timing data, you have to run `dynamicprogramming.py` first to create the `timing_results.txt` file that is required by `scatterplot.py`.
+  You can see <Dynamic Programming Execution Time vs Grid Size> graph first, close the window with X button, and see <Exhaustive Search Execution Time vs Grid Size> graph.
  
 
 
