@@ -106,7 +106,7 @@ Although the exhaustive algorithm can obtain all possible paths, it takes too mu
 <br>
 
 ## Collaborators 
-- **Chanran Kim (shining04@csu.fullerton.edu)**: Dynamic Programming Algorithm, Scatter Plot Graph, README
+- **Chanran Kim (shining04@csu.fullerton.edu)**: Dynamic Programming Algorithm, Scatter Plot Graph and README
 - **Brian Alvarez (briandalvarez@csu.fullerton.edu)**: Exhaustive Search Algorithm
 - **Christopher Contreras (CContreras71@csu.fullerton.edu)**: Timing Result and Scatter Plot Graph
 - **Vinh Nguyen(vinhgod123@csu.fullerton.edu)**: Project Report
